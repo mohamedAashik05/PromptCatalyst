@@ -1,0 +1,14 @@
+{
+  "name": "prompt-catalyst-root",
+  "private": true,
+  "scripts": {
+    "dev": "cd prompt-catalyst && npm run dev",
+    "build": "cd prompt-catalyst && npm run build",
+    "preview": "cd prompt-catalyst && npm run preview",
+    "lint": "cd prompt-catalyst && npm run lint"
+  },
+  "dependencies": {
+    "@nine-thirty-five/material-symbols-react": "^2.0.0",
+    "material-symbols": "^0.45.1"
+  }
+}

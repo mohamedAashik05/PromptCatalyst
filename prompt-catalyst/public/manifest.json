@@ -1,0 +1,19 @@
+{
+"manifest_version": 2,
+"name": "Prompt Catalyst",
+"description": "A Chrome extension to enhance and optimize your prompt according to the model you select.",
+"version": "1.0",
+"browser_action": {
+"default_icon": "logo.png",
+"default_popup": "index.html"
+},
+"icons": {
+"16": "logo.png",
+"48": "logo.png",
+"128": "logo.png"
+},
+"permissions": [
+"activeTab",
+"storage"
+]
+}

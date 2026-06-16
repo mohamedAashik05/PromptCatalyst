@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background: #222222;
+  color: #e8e8e8;
+  min-width: 340px;
+}
+
+/* ── Layout ── */
+#root {
+  padding: 20px;
+  max-width: 380px;
+  margin: 0 auto;
+}
+.sekuya-regular {
+  font-family: "Sekuya", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Sekuya", system-ui;
+  color: #89E900;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+
+/* ── Prompt Input ── */
+.prompt-input {
+  width: 100%;
+  background: #2e2e2e;
+  border: 1px solid #3a3a3a;
+  border-radius: 6px;
+  color: #e8e8e8;
+  font-size: 14px;
+  padding: 9px 12px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.prompt-input::placeholder {
+  color: #555;
+}
+
+.prompt-input:focus {
+  border-color: #89E900;
+}
+
+/* ── Model Selector ── */
+.model-selection {
+  margin-top: 10px;
+  position: relative;
+}
+
+.model-selection::after {
+  content: '▾';
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #89E900;
+  pointer-events: none;
+  font-size: 12px;
+}
+
+.model-selection select {
+  width: 100%;
+  background: #2e2e2e;
+  border: 1px solid #3a3a3a;
+  border-radius: 6px;
+  color: #e8e8e8;
+  font-size: 14px;
+  padding: 9px 12px;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+
+.model-selection select:focus {
+  border-color: #89E900;
+}
+
+.model-selection select option {
+  background: #2e2e2e;
+  color: #e8e8e8;
+}
+
+/* ── Submit Button ── */
+.submit-button {
+  margin-top: 12px;
+}
+
+.submit-button button {
+  width: 100%;
+  background: #89E900;
+  color: #111111;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.submit-button button:hover {
+  background: #9fff10;
+}
+
+.submit-button button:active {
+  transform: scale(0.98);
+}
+
+.submit-button button:disabled {
+  background: #4a7a00;
+  color: #333;
+  cursor: not-allowed;
+}
+
+/* ── Output Area ── */
+.output {
+  margin-top: 14px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-left: 3px solid #89E900;
+  border-radius: 6px;
+  padding: 12px;
+  font-family: 'Fira Mono', 'Courier New', monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  min-height: 60px;
+  color: #e8e8e8;
+}
+
+.output .placeholder {
+  color: #555;
+}
+
+.icon {
+    width: 60px; 
+    height: auto; 
+}
