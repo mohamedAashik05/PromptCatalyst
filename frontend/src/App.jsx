@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { FaCopy } from 'react-icons/fa6'
 import './App.css'
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://prompt-catalyst-api.vercel.app'
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000'
 
 function ModelSelection({ selectedModel, onChange }) {
   const models = ['Claude', 'Gemini', 'ChatGPT', 'Deepseek']
