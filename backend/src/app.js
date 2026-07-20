@@ -1,5 +1,13 @@
 const express = require("express");
 const cors = require("cors");
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://prompt-catalyst-eight.vercel.app",
+    ],
+  })
+);
 
 const promptRoutes = require("./routes/promptRoutes");
 
