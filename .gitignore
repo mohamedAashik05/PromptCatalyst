@@ -35,3 +35,10 @@ coverage/
 # OS files
 .DS_Store
 Thumbs.db
+node_modules
+.env
+dist
+build
+coverage
+.vscode
+.DS_Store
