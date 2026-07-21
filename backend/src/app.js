@@ -1,5 +1,11 @@
 const express = require("express");
 const cors = require("cors");
+
+const app = express();
+
+const promptRoutes = require("./routes/promptRoutes");
+
+// Middleware
 app.use(
   cors({
     origin: [
@@ -9,23 +15,17 @@ app.use(
   })
 );
 
-const promptRoutes = require("./routes/promptRoutes");
-
-
-const app = express();
-
-// Middleware
-app.use(cors());
 app.use(express.json());
 
-// Temporary Route
+// Health Route
 app.get("/", (req, res) => {
-    res.json({
-        success: true,
-        message: "PromptCatalyst Backend is Running 🚀"
-    });
+  res.json({
+    success: true,
+    message: "PromptCatalyst Backend is Running 🚀",
+  });
 });
 
+// API Routes
 app.use("/api/prompt", promptRoutes);
 
 module.exports = app;
