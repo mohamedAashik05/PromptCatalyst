@@ -16,6 +16,6 @@
     "storage"
   ],
   "host_permissions": [
-    "https://prompt-catalyst-api.vercel.app/*"
+    "https://promptcatalyst.onrender.com/*"
   ]
 }

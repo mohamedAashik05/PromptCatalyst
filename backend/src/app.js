@@ -9,13 +9,11 @@ const promptRoutes = require("./routes/promptRoutes");
 app.use(
   cors({
     origin: [
-      "http://localhost:5173",
       "https://prompt-catalyst-eight.vercel.app",
-    ],
+      "chrome-extension://meldmhhhmcgfoplninpenaafmkeeckco"
+    ]
   })
 );
-
-app.use(express.json());
 
 // Health Route
 app.get("/", (req, res) => {
